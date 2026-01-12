@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ProductHive - Details</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>ProductHive</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="star-rated.html">Star Rated</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <!-- Main Content -->
+    <main>
+      <h2>Product Details</h2>
+
+      <p>ID: <span id="id"></span></p>
+      <p>Name: <span id="name"></span></p>
+      <p>Category: <span id="category"></span></p>
+      <p>Price: <span id="price"></span></p>
+      <p>Rating: <span id="rating"></span></p>
+    </main>
+    <hr />
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 ProductHive. All rights reserved.</p>
+    </footer>
+
+    <script>
+      let id = new URL(window.location.href).searchParams.get("id");
+
+      let products = [
+        {
+          id: "1",
+          name: "Smart Watch",
+          category: "Electronics",
+          price: "₹2999",
+          rating: "4.5 ⭐",
+        },
+        {
+          id: "2",
+          name: "Wireless Earbuds",
+          category: "Accessories",
+          price: "₹1999",
+          rating: "4.2 ⭐",
+        },
+        {
+          id: "3",
+          name: "Gaming Mouse",
+          category: "Gaming",
+          price: "₹1499",
+          rating: "4.6 ⭐",
+        },
+        {
+          id: "4",
+          name: "Bluetooth Speaker",
+          category: "Audio",
+          price: "₹2499",
+          rating: "4.4 ⭐",
+        },
+      ];
+
+      let product = products.find((p) => p.id === id);
+
+      document.getElementById("id").innerText = product.id;
+      document.getElementById("name").innerText = product.name;
+      document.getElementById("category").innerText = product.category;
+      document.getElementById("price").innerText = product.price;
+      document.getElementById("rating").innerText = product.rating;
+    </script>
+  </body>
+</html>

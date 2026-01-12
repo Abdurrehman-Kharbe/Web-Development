@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <header>
+      <h1>CampusHive</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Clubs.html">Clubs</a></li>
+          <li><a href="Events.html">Events</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <section>
+        <h2>Member Profile</h2>
+        <p>ID: <span id="id"></span></p>
+        <p>Name: <span id="name"></span></p>
+        <p>Club: <span id="club"></span></p>
+        <p>Position: <span id="role"></span></p>
+        <p>Skills: <span id="tech"></span></p>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p>&copy; 2026 CampusHive. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+<script>
+  let id = new URL(window.location.href).searchParams.get("id");
+
+  let students = [
+    {
+      id: "1",
+      name: "Vishnu",
+      club: "Coding Club",
+      role: "Lead Developer",
+      tech: "HTML, CSS, JavaScript",
+    },
+    {
+      id: "2",
+      name: "Sahil",
+      club: "Robotics Club",
+      role: "Hardware Lead",
+      tech: "Arduino, Sensors",
+    },
+    {
+      id: "3",
+      name: "AbdurRehman",
+      club: "Literary Club",
+      role: "Content Head",
+      tech: "Writing, Editing",
+    },
+    {
+      id: "4",
+      name: "Simran",
+      club: "Design Club",
+      role: "Creative Lead",
+      tech: "Figma, Canva",
+    },
+  ];
+
+  let student = students.find((e) => e.id === id);
+
+  document.getElementById("id").innerText = student.id;
+  document.getElementById("name").innerText = student.name;
+  document.getElementById("club").innerText = student.club;
+  document.getElementById("role").innerText = student.role;
+  document.getElementById("tech").innerText = student.tech;
+</script>
