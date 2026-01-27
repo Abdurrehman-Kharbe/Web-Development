@@ -1,0 +1,253 @@
+.my-container {
+  padding: 10px;
+}
+
+/* Q1 */
+.p1 {
+  background: lightgray;
+  color: blue;
+}
+
+/* Q2 */
+.box {
+  width: 200px;
+  height: 100px;
+  background: lightblue;
+}
+
+/* Q3 */
+#title {
+  text-align: center;
+  color: green;
+}
+
+/* Q4 */
+.box-model {
+  width: 250px;
+  border: 3px solid black;
+  padding: 20px;
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+/* Q5 */
+h1 {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Q6 */
+body {
+  font-family: "Poppins", "Roboto", Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Q7 */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: wavy underline red;
+}
+
+/* Q8 */
+.rgb-color {
+  color: rgb(255, 0, 0);
+}
+.hex-color {
+  background-color: #000000;
+  color: white;
+}
+
+/* Q9 */
+.card {
+  padding: 10px 20px;
+  margin: 15px 30px;
+}
+
+/* Q10 */
+.overflow-box {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+hr {
+  margin: 20px 0px;
+}
+
+/* HTML + CSS Practice Questions */
+
+/* Q2 Display Block */
+.block-box {
+  width: 100px;
+  height: 50px;
+  background: lightgreen;
+  margin-bottom: 10px;
+}
+
+/* Q3 Inline-Block */
+.inline-block-box {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: pink;
+}
+
+/* Q4 Hide Element */
+.hide-display {
+  display: none;
+}
+
+.hide-visibility {
+  visibility: hidden;
+}
+
+/* Q5 RGBA */
+.rgba-box {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 0, 0, 0.5);
+}
+
+/* Q6 Opacity */
+.opacity-box {
+  width: 60px;
+  height: 60px;
+  background: blue;
+  opacity: 0.5;
+  display: inline-block;
+}
+
+/* Q7 Percentage Width */
+.parent {
+  width: 400px;
+  background: #ccc;
+}
+
+.child {
+  width: 50%;
+  background: orange;
+}
+
+/* Q8 em */
+.em-box {
+  font-size: 20px;
+  padding: 2em;
+  background: #ddd;
+}
+
+/* Q9 rem */
+html {
+  font-size: 16px;
+}
+
+.rem-text {
+  font-size: 2rem;
+}
+
+/* Q10 Background Image */
+.bg-image {
+  height: 300px;
+  background-image: url("https://placehold.co/600x400");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Q1 Flexbox top-left */
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 150px;
+  border: 1px solid #000;
+}
+
+/* Q2 Flexbox center */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 1px solid #000;
+}
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+}
+
+/* Q3 Responsive nav */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Q4 Profile card */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  border: 1px solid #ccc;
+}
+
+/* Q5 Course card */
+.course-card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border: 1px solid #ccc;
+}
+
+/* Q6 Product card */
+.product-card {
+  display: flex;
+  max-width: 400px;
+  gap: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Q7 Testimonial card */
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  border: 1px solid #ccc;
+}
+
+/* Q8 Pricing card */
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  border: 1px solid #ccc;
+}
+
+/* Q9 Pricing row wrap */
+.pricing-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.price-box {
+  width: 150px;
+  height: 100px;
+  background: lightgray;
+}
+
+/* Q10 Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #222;
+  color: white;
+  padding: 20px;
+}
