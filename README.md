@@ -8,6 +8,7 @@ responsive design, and best practices.
 ---
 
 ## 🎯 Goals
+
 - Strengthen core web development fundamentals
 - Build responsive and user-friendly interfaces
 - Develop consistent coding habits through daily practice
@@ -16,6 +17,7 @@ responsive design, and best practices.
 ---
 
 ## 🛠 Tech Stack
+
 - HTML5
 - CSS3
 - JavaScript
@@ -27,14 +29,18 @@ responsive design, and best practices.
 ## 📚 Learning Progress
 
 ### ✅ Completed
+
 - HTML basics & semantic elements
+- CSS
 
 ### 🚧 In Progress
-- CSS
+
+- JavaScript
 
 ---
 
 ## 🧪 Practice Projects
+
 - Basic static pages
 - UI layout practice
 - Mini components and experiments
@@ -42,6 +48,6 @@ responsive design, and best practices.
 ---
 
 ## 📌 Notes
+
 This repository is part of my learning-in-public approach. Code quality and
 structure will improve over time as I progress.
-
